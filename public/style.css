@@ -1,0 +1,26 @@
+button {
+    padding: 2em;
+    margin: 5em;
+    background-color: navy;
+    /* color: white; */
+    border: none;
+    border-radius: .5em;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: 3em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    margin: 5vw;
+}
