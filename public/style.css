@@ -7,6 +7,15 @@ button {
     border-radius: .5em;
 }
 
+.details-button {
+    padding: 1em;
+    margin: 0.5em;
+    background-color: darkred;
+    border: none;
+    font-size: .8em;
+    /* border-radius: 1em; */
+}
+
 .header-container {
     display: flex;
     justify-content: center;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link} from 'react-router-dom';
 
 class Films extends Component {
     constructor(props) {
@@ -8,14 +9,14 @@ class Films extends Component {
 
         };
     }
+
     render() {
         return (
-            <div className="card film-card">
-                <div className="card-body">
-                    <h4 className="card-title">{this.props.title}</h4>
-                    <p className="card-text">{this.props.description}</p>
+                <div>
+                    <h3>{this.props.title}</h3>
+                    <p>{this.props.description}</p>
+                    <button className="details-button"><Link to={`/films/${this.props.id}`}>View Details</Link></button>
                 </div>
-            </div>
         )
     }
 }

@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import ShowFilms from './ShowFilms';
 import ShowPeople from './ShowPeople';
 import Home from './Home';
+import ShowFeatured from './ShowFeatured';
 
 class App extends Component {
     constructor(props) {
@@ -23,6 +24,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route exact path="/films" component={ShowFilms} />
                         <Route exact path="/people" component={ShowPeople} />
+                        <Route path="/films/:id" component={ShowFeatured} />
                     </Switch>
                 </Fragment>
             </Router>

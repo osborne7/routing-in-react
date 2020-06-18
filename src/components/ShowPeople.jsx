@@ -22,20 +22,20 @@ class ShowPeople extends Component {
         return (
             <main>
                 <div className="header-container">
-            <img className="mx-auto d-block" src="https://ghibliapi.herokuapp.com/images/logo.svg" alt="studio ghibli logo"/>
-            </div>
-            <div className="content">
-            <div className="row">
-                {this.state.people.map((person, index) => {
-                    return (
-                        <div key={index} className="col-lg-4">
-                            <People name={person.name} age={person.age} gender={person.gender} />
-                        </div>
-                    )
-                })}
-            </div>
-        </div>
-        </main>
+                    <img src="https://ghibliapi.herokuapp.com/images/logo.svg" alt="studio ghibli logo"/>
+                </div>
+                <div className="content">
+                    <div>
+                        {this.state.people.map((person, index) => {
+                            return (
+                                <div key={index} className="col-lg-4">
+                                    <People name={person.name} age={person.age} gender={person.gender} />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </main>
             )
     }
 }

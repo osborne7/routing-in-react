@@ -10,12 +10,10 @@ class People extends Component {
     }
     render() {
         return (
-            <div className="card film-card">
-                <div className="card-body">
-                    <h4 className="card-title">{this.props.name}</h4>
-                    <p className="card-text">{this.props.age}</p>
-                    <p className="card-text">{this.props.gender}</p>
-                </div>
+            <div>
+                <h3>{this.props.name}</h3>
+                <p>{this.props.age}</p>
+                <p>{this.props.gender}</p>
             </div>
         )
     }
